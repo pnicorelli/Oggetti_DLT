@@ -37,7 +37,7 @@ prepare the stuff:
 
 ```shell
 # Clone the repo
-git clone https://github.com/AD2014/Oggetti_DLT.git
+git clone https://github.com/pnicorelli/Oggetti_DLT.git
 cd Oggetti_DLT
 
 # Configure env-file
@@ -46,22 +46,7 @@ vim config.env # edit with your values
 
 ```
 
-then you can use the:
-
-- docker way
-
-```shell
-# BUILD
-docker build -t ad2014/seta .
-
-# RUN
-docker run --env-file ./config.env -p 8080:9000 -d ad2014/seta
-
-# TEST
-curl -X GET localhost:8080/
-```
-
-- development way
+### RUN
 
 ```shell
 # Launch local service
